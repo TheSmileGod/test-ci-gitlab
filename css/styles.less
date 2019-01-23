@@ -1,0 +1,988 @@
+@baseOpenSans: 'Open Sans', sans-serif;
+@family-conquerorsans: 'conquerorsans';
+@family-conquerorsansextrabold: 'conquerorsansextrabold';
+@family-conquerorsansextrabolditalic: 'conquerorsansextrabolditalic';
+@basefont-size: 20px;
+@translate: translate(-50%, 0%);
+@transition: 1000ms ease all ;
+.transition{
+	 -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition ;
+}
+
+@mouse-hover: url(../images/cursor-mouse.png) 25 40, auto;
+@cat-hover: url(../images/cursor-cat.png) 25 40, move;
+@dog-hover: url(../images/cursor-dog.png) 25 40, auto;
+@fox-hover: url(../images/cursor-fox.png) 25 40, auto;
+@wolf-hover: url(../images/cursor-wolf.png) 25 40, auto;
+@stop-hover: url(../images/stop-icon.png) 25 40, auto;
+
+@house-wolf: url(../images/house-wolf.png) no-repeat;
+@house-fox: url(../images/house-fox.png) 0% 1% no-repeat;
+@house-dog: url(../images/house-dog.png) 0% 21% no-repeat;
+@house-cat: url(../images/house-cat.png) -1% 26% no-repeat;
+@house-mouse: url(../images/house-mouse.png) -0% 31% no-repeat;	
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  @ -in-house
+/*-----------------------------------------------------------------------------------*/
+/*------------------- @mouse-in-house -----------------------*/
+@mouse-in-house-1 :url(../images/animate-mouse-in-house/gif/1.gif) -3% 31%  no-repeat;
+@mouse-in-house-2 :url(../images/animate-mouse-in-house/gif/2.gif) -3% 31%  no-repeat;
+@mouse-in-house-3 :url(../images/animate-mouse-in-house/gif/3.gif) -3% 31%  no-repeat;
+@mouse-in-house-4 :url(../images/animate-mouse-in-house/gif/4.gif) -3% 31%  no-repeat;
+@mouse-in-house-5 :url(../images/animate-mouse-in-house/gif/5.gif) -3% 31%  no-repeat;
+@mouse-in-house-6 :url(../images/animate-mouse-in-house/gif/6.gif) -3% 31%  no-repeat;
+@mouse-in-house-7 :url(../images/animate-mouse-in-house/gif/7.gif) -3% 31%  no-repeat;
+@mouse-in-house-8 :url(../images/animate-mouse-in-house/gif/8.gif) -3% 31%  no-repeat;
+@mouse-in-house-9 :url(../images/animate-mouse-in-house/gif/9.gif) -3% 31%  no-repeat;
+@mouse-in-house-10 :url(../images/animate-mouse-in-house/gif/10.gif) -3% 31%  no-repeat;
+@mouse-in-house-11 :url(../images/animate-mouse-in-house/gif/11.gif) -3% 31%  no-repeat;
+@mouse-in-house-12 :url(../images/animate-mouse-in-house/gif/12.gif) -3% 31%  no-repeat;
+@mouse-in-house-13 :url(../images/animate-mouse-in-house/gif/13.gif) -3% 31%  no-repeat;
+@mouse-in-house-14 :url(../images/animate-mouse-in-house/gif/14.gif) -3% 31%  no-repeat;
+@mouse-in-house-15 :url(../images/animate-mouse-in-house/gif/15.gif) -3% 31%  no-repeat;
+@mouse-in-house-16 :url(../images/animate-mouse-in-house/gif/16.gif) -3% 31%  no-repeat;
+@mouse-in-house-17 :url(../images/animate-mouse-in-house/gif/17.gif) -3% 31%  no-repeat;
+@mouse-in-house-18 :url(../images/animate-mouse-in-house/gif/18.gif) -3% 31%  no-repeat;
+@mouse-in-house-19 :url(../images/animate-mouse-in-house/gif/19.gif) -3% 31%  no-repeat;
+@mouse-in-house-20 :url(../images/animate-mouse-in-house/gif/20.gif) -3% 31%  no-repeat;
+@mouse-in-house-21 :url(../images/animate-mouse-in-house/gif/21.gif) -3% 31%  no-repeat;
+@mouse-in-house-22 :url(../images/animate-mouse-in-house/gif/22.gif) -3% 31%  no-repeat;
+@mouse-in-house-23 :url(../images/animate-mouse-in-house/gif/23.gif) -3% 31%  no-repeat;
+@mouse-in-house-24 :url(../images/animate-mouse-in-house/gif/24.gif) -3% 31%  no-repeat;
+@mouse-in-house-25 :url(../images/animate-mouse-in-house/gif/25.gif) -3% 31%  no-repeat;
+@mouse-in-house-26 :url(../images/animate-mouse-in-house/gif/26.gif) -3% 31%  no-repeat;
+@mouse-in-house-27 :url(../images/animate-mouse-in-house/gif/27.gif) -3% 31%  no-repeat;
+@mouse-in-house-28 :url(../images/animate-mouse-in-house/gif/28.gif) -3% 31%  no-repeat;
+@mouse-in-house-29 :url(../images/animate-mouse-in-house/gif/29.gif) -3% 31%  no-repeat;
+@mouse-in-house-30 :url(../images/animate-mouse-in-house/gif/30.gif) -3% 31%  no-repeat;
+@mouse-in-house-31 :url(../images/animate-mouse-in-house/gif/31.gif) -3% 31%  no-repeat;
+@mouse-in-house-32 :url(../images/animate-mouse-in-house/gif/32.gif) -3% 31%  no-repeat;
+@mouse-in-house-33 :url(../images/animate-mouse-in-house/gif/33.gif) -3% 31%  no-repeat;
+@mouse-in-house-34 :url(../images/animate-mouse-in-house/gif/34.gif) -3% 31%  no-repeat;
+@mouse-in-house-35 :url(../images/animate-mouse-in-house/gif/35.gif) -3% 31%  no-repeat;
+@mouse-in-house-36 :url(../images/animate-mouse-in-house/gif/36.gif) -3% 31%  no-repeat;
+@mouse-in-house-37 :url(../images/animate-mouse-in-house/gif/37.gif) -3% 31%  no-repeat;
+@mouse-in-house-38 :url(../images/animate-mouse-in-house/gif/38.gif) -3% 31%  no-repeat;
+@mouse-in-house-39 :url(../images/animate-mouse-in-house/gif/39.gif) -3% 31%  no-repeat;
+@mouse-in-house-40 :url(../images/animate-mouse-in-house/gif/40.gif) -3% 31%  no-repeat;
+@mouse-in-house-41 :url(../images/animate-mouse-in-house/gif/41.gif) -3% 31%  no-repeat;
+@mouse-in-house-42 :url(../images/animate-mouse-in-house/gif/42.gif) -3% 31%  no-repeat;
+@mouse-in-house-43 :url(../images/animate-mouse-in-house/gif/43.gif) -3% 31%  no-repeat;
+@mouse-in-house-44 :url(../images/animate-mouse-in-house/gif/44.gif) -3% 31%  no-repeat;
+@mouse-in-house-45 :url(../images/animate-mouse-in-house/gif/45.gif) -3% 31%  no-repeat;
+@mouse-in-house-46 :url(../images/animate-mouse-in-house/gif/46.gif) -3% 31%  no-repeat;
+@mouse-in-house-47 :url(../images/animate-mouse-in-house/gif/47.gif) -3% 31%  no-repeat;
+@mouse-in-house-48 :url(../images/animate-mouse-in-house/gif/48.gif) -3% 31%  no-repeat;
+@mouse-in-house-49 :url(../images/animate-mouse-in-house/gif/49.gif) -3% 31%  no-repeat;
+@mouse-in-house-50 :url(../images/animate-mouse-in-house/gif/50.gif) -3% 31%  no-repeat;
+@mouse-in-house-51 :url(../images/animate-mouse-in-house/gif/51.gif) -3% 31%  no-repeat;
+@mouse-in-house-52 :url(../images/animate-mouse-in-house/gif/52.gif) -3% 31%  no-repeat;
+@mouse-in-house-53 :url(../images/animate-mouse-in-house/gif/53.gif) -3% 31%  no-repeat;
+@mouse-in-house-54 :url(../images/animate-mouse-in-house/gif/54.gif) -3% 31%  no-repeat;
+@mouse-in-house-55 :url(../images/animate-mouse-in-house/gif/55.gif) -3% 31%  no-repeat;
+@mouse-in-house-56 :url(../images/animate-mouse-in-house/gif/56.gif) -3% 31%  no-repeat;
+@mouse-in-house-57 :url(../images/animate-mouse-in-house/gif/57.gif) -3% 31%  no-repeat;
+@mouse-in-house-58 :url(../images/animate-mouse-in-house/gif/58.gif) -3% 31%  no-repeat;
+@mouse-in-house-59 :url(../images/animate-mouse-in-house/gif/59.gif) -3% 31%  no-repeat;
+@mouse-in-house-60 :url(../images/animate-mouse-in-house/gif/60.gif) -3% 31%  no-repeat;
+@mouse-in-house-61 :url(../images/animate-mouse-in-house/gif/61.gif) -3% 31%  no-repeat;
+@mouse-in-house-62 :url(../images/animate-mouse-in-house/gif/62.gif) -3% 31%  no-repeat;
+@mouse-in-house-63 :url(../images/animate-mouse-in-house/gif/63.gif) -3% 31%  no-repeat;
+@mouse-in-house-64 :url(../images/animate-mouse-in-house/gif/64.gif) -3% 31%  no-repeat;
+/*--------------------------- @cat-in-house ---------------------------*/
+@cat-in-house-1 : url(../images/animate-cat-in-house/gif/1.gif) -1% 29% no-repeat;
+@cat-in-house-2 : url(../images/animate-cat-in-house/gif/2.gif) -1% 29% no-repeat;
+@cat-in-house-3 : url(../images/animate-cat-in-house/gif/3.gif) -1% 29% no-repeat;
+@cat-in-house-4 : url(../images/animate-cat-in-house/gif/4.gif) -1% 29% no-repeat;
+@cat-in-house-5 : url(../images/animate-cat-in-house/gif/5.gif) -1% 29% no-repeat;
+@cat-in-house-6 : url(../images/animate-cat-in-house/gif/6.gif) -1% 29% no-repeat;
+@cat-in-house-7 : url(../images/animate-cat-in-house/gif/7.gif) -1% 29% no-repeat;
+@cat-in-house-8 : url(../images/animate-cat-in-house/gif/8.gif) -1% 29% no-repeat;
+@cat-in-house-9 : url(../images/animate-cat-in-house/gif/9.gif) -1% 29% no-repeat;
+@cat-in-house-10 : url(../images/animate-cat-in-house/gif/10.gif) -1% 29% no-repeat;
+@cat-in-house-11 : url(../images/animate-cat-in-house/gif/11.gif) -1% 29% no-repeat;
+@cat-in-house-12 : url(../images/animate-cat-in-house/gif/12.gif) -1% 29% no-repeat;
+@cat-in-house-13 : url(../images/animate-cat-in-house/gif/13.gif) -1% 29% no-repeat;
+@cat-in-house-14 : url(../images/animate-cat-in-house/gif/14.gif) -1% 29% no-repeat;
+@cat-in-house-15 : url(../images/animate-cat-in-house/gif/15.gif) -1% 29% no-repeat;
+@cat-in-house-16 : url(../images/animate-cat-in-house/gif/16.gif) -1% 29% no-repeat;
+@cat-in-house-17 : url(../images/animate-cat-in-house/gif/17.gif) -1% 29% no-repeat;
+@cat-in-house-18 : url(../images/animate-cat-in-house/gif/18.gif) -1% 29% no-repeat;
+@cat-in-house-19 : url(../images/animate-cat-in-house/gif/19.gif) -1% 29% no-repeat;
+@cat-in-house-20 : url(../images/animate-cat-in-house/gif/20.gif) -1% 29% no-repeat;
+@cat-in-house-21 : url(../images/animate-cat-in-house/gif/21.gif) -1% 29% no-repeat;
+@cat-in-house-22 : url(../images/animate-cat-in-house/gif/22.gif) -1% 29% no-repeat;
+@cat-in-house-23 : url(../images/animate-cat-in-house/gif/23.gif) -1% 29% no-repeat;
+@cat-in-house-24 : url(../images/animate-cat-in-house/gif/24.gif) -1% 29% no-repeat;
+@cat-in-house-25 : url(../images/animate-cat-in-house/gif/25.gif) -1% 29% no-repeat;
+@cat-in-house-26 : url(../images/animate-cat-in-house/gif/26.gif) -1% 29% no-repeat;
+@cat-in-house-27 : url(../images/animate-cat-in-house/gif/27.gif) -1% 29% no-repeat;
+@cat-in-house-28 : url(../images/animate-cat-in-house/gif/28.gif) -1% 29% no-repeat;
+@cat-in-house-29 : url(../images/animate-cat-in-house/gif/29.gif) -1% 29% no-repeat;
+@cat-in-house-30 : url(../images/animate-cat-in-house/gif/30.gif) -1% 29% no-repeat;
+@cat-in-house-31 : url(../images/animate-cat-in-house/gif/31.gif) -1% 29% no-repeat;
+/*---------------------------  @dog-in-house ---------------------------*/
+@dog-in-house-1 : url(../images/animate-dog-in-house/gif/1.gif) -1% 23%  no-repeat;
+@dog-in-house-2 : url(../images/animate-dog-in-house/gif/2.gif) -1% 23%  no-repeat;
+@dog-in-house-3 : url(../images/animate-dog-in-house/gif/3.gif) -1% 23%  no-repeat;
+@dog-in-house-4 : url(../images/animate-dog-in-house/gif/4.gif) -1% 23%  no-repeat;
+@dog-in-house-5 : url(../images/animate-dog-in-house/gif/5.gif) -1% 23%  no-repeat;
+@dog-in-house-6 : url(../images/animate-dog-in-house/gif/6.gif) -1% 23%  no-repeat;
+@dog-in-house-7 : url(../images/animate-dog-in-house/gif/7.gif) -1% 23%  no-repeat;
+@dog-in-house-8 : url(../images/animate-dog-in-house/gif/8.gif) -1% 23%  no-repeat;
+@dog-in-house-9 : url(../images/animate-dog-in-house/gif/9.gif) -1% 23%  no-repeat;
+@dog-in-house-10 : url(../images/animate-dog-in-house/gif/10.gif) -1% 23%  no-repeat;
+@dog-in-house-11 : url(../images/animate-dog-in-house/gif/11.gif) -1% 23%  no-repeat;
+@dog-in-house-12 : url(../images/animate-dog-in-house/gif/12.gif) -1% 23%  no-repeat;
+@dog-in-house-13 : url(../images/animate-dog-in-house/gif/13.gif) -1% 23%  no-repeat;
+/*---------------------------- @fox-in-house ----------------------------*/
+@fox-in-house-1 : url(../images/animate-fox-in-house/gif/1.gif) -1% 4%  no-repeat;
+@fox-in-house-2 : url(../images/animate-fox-in-house/gif/2.gif) -1% 4%  no-repeat;
+@fox-in-house-3 : url(../images/animate-fox-in-house/gif/3.gif) -1% 4%  no-repeat;
+@fox-in-house-4 : url(../images/animate-fox-in-house/gif/4.gif) -1% 4%  no-repeat;
+@fox-in-house-5 : url(../images/animate-fox-in-house/gif/5.gif) -1% 4%  no-repeat;
+@fox-in-house-6 : url(../images/animate-fox-in-house/gif/6.gif) -1% 4%  no-repeat;
+@fox-in-house-7 : url(../images/animate-fox-in-house/gif/7.gif) -1% 4%  no-repeat;
+/*---------------------------  @wolf-in-house ---------------------------*/
+@wolf-in-house-1 : url(../images/animate-wolf-in-house/gif/1.gif) -1% 5%  no-repeat;
+@wolf-in-house-2 : url(../images/animate-wolf-in-house/gif/2.gif) -1% 5%  no-repeat;
+@wolf-in-house-3 : url(../images/animate-wolf-in-house/gif/3.gif) -1% 5%  no-repeat;
+/*-----------------------------------------------------------------------------------*/
+/*  @ -in-truck
+/*-----------------------------------------------------------------------------------*/
+/*-------------------- mouse-in-truck ------------------*/
+@mouse-in-truck-1 : url(../images/mouse-in-truck/jpg/1.jpg) no-repeat;
+@mouse-in-truck-2 : url(../images/mouse-in-truck/jpg/2.jpg) no-repeat;
+@mouse-in-truck-3 : url(../images/mouse-in-truck/jpg/3.jpg) no-repeat;
+@mouse-in-truck-4 : url(../images/mouse-in-truck/jpg/4.jpg) no-repeat;
+@mouse-in-truck-5 : url(../images/mouse-in-truck/jpg/5.jpg) no-repeat;
+@mouse-in-truck-6 : url(../images/mouse-in-truck/jpg/6.jpg) no-repeat;
+@mouse-in-truck-7 : url(../images/mouse-in-truck/jpg/7.jpg) no-repeat;
+@mouse-in-truck-8 : url(../images/mouse-in-truck/jpg/8.jpg) no-repeat;
+@mouse-in-truck-9 : url(../images/mouse-in-truck/jpg/9.jpg) no-repeat;
+@mouse-in-truck-10 : url(../images/mouse-in-truck/jpg/10.jpg) no-repeat;
+@mouse-in-truck-11 : url(../images/mouse-in-truck/jpg/11.jpg) no-repeat;
+@mouse-in-truck-12 : url(../images/mouse-in-truck/jpg/12.jpg) no-repeat;
+@mouse-in-truck-13 : url(../images/mouse-in-truck/jpg/13.jpg) no-repeat;
+@mouse-in-truck-14 : url(../images/mouse-in-truck/jpg/14.jpg) no-repeat;
+@mouse-in-truck-15 : url(../images/mouse-in-truck/jpg/15.jpg) no-repeat;
+@mouse-in-truck-16 : url(../images/mouse-in-truck/jpg/16.jpg) no-repeat;
+@mouse-in-truck-17 : url(../images/mouse-in-truck/jpg/17.jpg) no-repeat;
+@mouse-in-truck-18 : url(../images/mouse-in-truck/jpg/18.jpg) no-repeat;
+@mouse-in-truck-19 : url(../images/mouse-in-truck/jpg/19.jpg) no-repeat;
+@mouse-in-truck-20 : url(../images/mouse-in-truck/jpg/20.jpg) no-repeat;
+@mouse-in-truck-21 : url(../images/mouse-in-truck/jpg/21.jpg) no-repeat;
+@mouse-in-truck-22 : url(../images/mouse-in-truck/jpg/22.jpg) no-repeat;
+@mouse-in-truck-23 : url(../images/mouse-in-truck/jpg/23.jpg) no-repeat;
+@mouse-in-truck-24 : url(../images/mouse-in-truck/jpg/24.jpg) no-repeat;
+@mouse-in-truck-25 : url(../images/mouse-in-truck/jpg/25.jpg) no-repeat;
+@mouse-in-truck-26 : url(../images/mouse-in-truck/jpg/26.jpg) no-repeat;
+@mouse-in-truck-27 : url(../images/mouse-in-truck/jpg/27.jpg) no-repeat;
+@mouse-in-truck-28 : url(../images/mouse-in-truck/jpg/28.jpg) no-repeat;
+@mouse-in-truck-29 : url(../images/mouse-in-truck/jpg/29.jpg) no-repeat;
+@mouse-in-truck-30 : url(../images/mouse-in-truck/jpg/30.jpg) no-repeat;
+@mouse-in-truck-31 : url(../images/mouse-in-truck/jpg/31.jpg) no-repeat;
+@mouse-in-truck-32 : url(../images/mouse-in-truck/jpg/32.jpg) no-repeat;
+@mouse-in-truck-33 : url(../images/mouse-in-truck/jpg/33.jpg) no-repeat;
+@mouse-in-truck-34 : url(../images/mouse-in-truck/jpg/34.jpg) no-repeat;
+@mouse-in-truck-35 : url(../images/mouse-in-truck/jpg/35.jpg) no-repeat;
+@mouse-in-truck-36 : url(../images/mouse-in-truck/jpg/36.jpg) no-repeat;
+@mouse-in-truck-37 : url(../images/mouse-in-truck/jpg/37.jpg) no-repeat;
+@mouse-in-truck-38 : url(../images/mouse-in-truck/jpg/38.jpg) no-repeat;
+@mouse-in-truck-39 : url(../images/mouse-in-truck/jpg/39.jpg) no-repeat;
+@mouse-in-truck-40 : url(../images/mouse-in-truck/jpg/40.jpg) no-repeat;
+@mouse-in-truck-41 : url(../images/mouse-in-truck/jpg/41.jpg) no-repeat;
+@mouse-in-truck-42 : url(../images/mouse-in-truck/jpg/42.jpg) no-repeat;
+@mouse-in-truck-43 : url(../images/mouse-in-truck/jpg/43.jpg) no-repeat;
+@mouse-in-truck-44 : url(../images/mouse-in-truck/jpg/44.jpg) no-repeat;
+@mouse-in-truck-45 : url(../images/mouse-in-truck/jpg/45.jpg) no-repeat;
+@mouse-in-truck-46 : url(../images/mouse-in-truck/jpg/46.jpg) no-repeat;
+@mouse-in-truck-47 : url(../images/mouse-in-truck/jpg/47.jpg) no-repeat;
+@mouse-in-truck-48 : url(../images/mouse-in-truck/jpg/48.jpg) no-repeat;
+@mouse-in-truck-49 : url(../images/mouse-in-truck/jpg/49.jpg) no-repeat;
+@mouse-in-truck-50 : url(../images/mouse-in-truck/jpg/50.jpg) no-repeat;
+@mouse-in-truck-51 : url(../images/mouse-in-truck/jpg/51.jpg) no-repeat;
+@mouse-in-truck-52 : url(../images/mouse-in-truck/jpg/52.jpg) no-repeat;
+@mouse-in-truck-53 : url(../images/mouse-in-truck/jpg/53.jpg) no-repeat;
+@mouse-in-truck-54 : url(../images/mouse-in-truck/jpg/54.jpg) no-repeat;
+@mouse-in-truck-55 : url(../images/mouse-in-truck/jpg/55.jpg) no-repeat;
+@mouse-in-truck-56 : url(../images/mouse-in-truck/jpg/56.jpg) no-repeat;
+@mouse-in-truck-57 : url(../images/mouse-in-truck/jpg/57.jpg) no-repeat;
+@mouse-in-truck-58 : url(../images/mouse-in-truck/jpg/58.jpg) no-repeat;
+@mouse-in-truck-59 : url(../images/mouse-in-truck/jpg/59.jpg) no-repeat;
+@mouse-in-truck-60 : url(../images/mouse-in-truck/jpg/60.jpg) no-repeat;
+@mouse-in-truck-61 : url(../images/mouse-in-truck/jpg/61.jpg) no-repeat;
+@mouse-in-truck-62 : url(../images/mouse-in-truck/jpg/62.jpg) no-repeat;
+@mouse-in-truck-63 : url(../images/mouse-in-truck/jpg/63.jpg) no-repeat;
+@mouse-in-truck-64 : url(../images/mouse-in-truck/jpg/64.jpg) no-repeat;
+/*-------------------- cat-in-truck ------------------*/
+@cat-in-truck-1 : url(../images/cat-in-truck/png/1.png) no-repeat;
+@cat-in-truck-2 : url(../images/cat-in-truck/png/2.png) no-repeat;
+@cat-in-truck-3 : url(../images/cat-in-truck/png/3.png) no-repeat;
+@cat-in-truck-4 : url(../images/cat-in-truck/png/4.png) no-repeat;
+@cat-in-truck-5 : url(../images/cat-in-truck/png/5.png) no-repeat;
+@cat-in-truck-6 : url(../images/cat-in-truck/png/6.png) no-repeat;
+@cat-in-truck-7 : url(../images/cat-in-truck/png/7.png) no-repeat;
+@cat-in-truck-8 : url(../images/cat-in-truck/png/8.png) no-repeat;
+@cat-in-truck-9 : url(../images/cat-in-truck/png/9.png) no-repeat;
+@cat-in-truck-10 : url(../images/cat-in-truck/png/10.png) no-repeat;
+@cat-in-truck-11 : url(../images/cat-in-truck/png/11.png) no-repeat;
+@cat-in-truck-12 : url(../images/cat-in-truck/png/12.png) no-repeat;
+@cat-in-truck-13 : url(../images/cat-in-truck/png/13.png) no-repeat;
+@cat-in-truck-14 : url(../images/cat-in-truck/png/14.png) no-repeat;
+@cat-in-truck-15 : url(../images/cat-in-truck/png/15.png) no-repeat;
+@cat-in-truck-16 : url(../images/cat-in-truck/png/16.png) no-repeat;
+@cat-in-truck-17 : url(../images/cat-in-truck/png/17.png) no-repeat;
+@cat-in-truck-18 : url(../images/cat-in-truck/png/18.png) no-repeat;
+@cat-in-truck-19 : url(../images/cat-in-truck/png/19.png) no-repeat;
+@cat-in-truck-20 : url(../images/cat-in-truck/png/20.png) no-repeat;
+@cat-in-truck-21 : url(../images/cat-in-truck/png/21.png) no-repeat;
+@cat-in-truck-22 : url(../images/cat-in-truck/png/22.png) no-repeat;
+@cat-in-truck-23 : url(../images/cat-in-truck/png/23.png) no-repeat;
+@cat-in-truck-24 : url(../images/cat-in-truck/png/24.png) no-repeat;
+@cat-in-truck-25 : url(../images/cat-in-truck/png/25.png) no-repeat;
+@cat-in-truck-26 : url(../images/cat-in-truck/png/26.png) no-repeat;
+@cat-in-truck-27 : url(../images/cat-in-truck/png/27.png) no-repeat;
+@cat-in-truck-28 : url(../images/cat-in-truck/png/28.png) no-repeat;
+@cat-in-truck-29 : url(../images/cat-in-truck/png/29.png) no-repeat;
+@cat-in-truck-30 : url(../images/cat-in-truck/png/30.png) no-repeat;
+@cat-in-truck-31 : url(../images/cat-in-truck/png/31.png) no-repeat;
+/*-------------------- dog-in-truck ------------------*/
+@dog-in-truck-1 : url(../images/dog-in-truck/png/1.png) no-repeat;
+@dog-in-truck-2 : url(../images/dog-in-truck/png/2.png) no-repeat;
+@dog-in-truck-3 : url(../images/dog-in-truck/png/3.png) no-repeat;
+@dog-in-truck-4 : url(../images/dog-in-truck/png/4.png) no-repeat;
+@dog-in-truck-5 : url(../images/dog-in-truck/png/5.png) no-repeat;
+@dog-in-truck-6 : url(../images/dog-in-truck/png/6.png) no-repeat;
+@dog-in-truck-7 : url(../images/dog-in-truck/png/7.png) no-repeat;
+/*-------------------- fox-in-truck ------------------*/
+@fox-in-truck-1 : url(../images/fox-in-truck/png/1.png) no-repeat;
+@fox-in-truck-2 : url(../images/fox-in-truck/png/2.png) no-repeat;
+@fox-in-truck-3 : url(../images/fox-in-truck/png/3.png) no-repeat;
+@fox-in-truck-4 : url(../images/fox-in-truck/png/4.png) no-repeat;
+@fox-in-truck-5 : url(../images/fox-in-truck/png/5.png) no-repeat;
+@fox-in-truck-6 : url(../images/fox-in-truck/png/6.png) no-repeat;
+@fox-in-truck-7 : url(../images/fox-in-truck/png/7.png) no-repeat;
+/*-------------------- wolf-in-truck ------------------*/
+// @wolf-in-truck-1 : url(../images/wolf-in-truck/png/1.png) no-repeat;
+
+
+@import url(fonts.css);
+@import url(reset.css);
+/* ----------------------------Блок присоединения шрифтов--------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+/* ------------------------------ Конец блока присоединения шрифтов ------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*  TYPOGRAPHY
+/*-----------------------------------------------------------------------------------*/
+body{
+    overflow-x: hidden;
+	// min-width: 992px;
+    font-family: @baseOpenSans;
+    font-size: @basefont-size;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.hide{
+	display: none !important;
+}
+.visible{
+	display: block !important;
+}
+.wrapper{
+	width: 2000px;
+	margin: 0 auto;
+}
+.wrapper-in{
+	width: 1800px;
+	margin: 0 auto;
+	padding-top: 75px;
+	outline: 0px solid #000;
+}
+a:hover{
+	opacity: .7;
+}
+/* ------------------------------  Start header ------------------------------ */
+.header{
+	padding-right: 15px;
+}
+	a.refresh{
+		display: inline-block;
+	    width: 46px;
+	    height: 56px;
+		padding-bottom: 20px;
+		float: right;
+		text-decoration: none;
+		.transition;
+	    background: url(../images/renew-x2.png) no-repeat;
+	}
+	.refresh:hover {
+	   /* -moz-transform: rotate(360deg); 
+	    -ms-transform: rotate(360deg); 
+	    -webkit-transform: rotate(360deg); 
+	    -o-transform: rotate(360deg);
+	    transform: rotate(360deg);*/
+	    background: url(../images/renew-hover-x2.png) no-repeat;   
+	}
+	.header-in{
+
+	}
+	.h1{
+		font-family: @family-conquerorsansextrabold;
+		font-size: 34px;
+		font-weight: 800;
+	}
+	.description{
+		width: 80%;
+	    padding: 20px 0;
+	    line-height: 1.2em;
+		font-size: @basefont-size - 3;
+		word-wrap: break-word;
+		span{
+			display: inline-block;
+		}
+	}
+	.h2{
+		font-family: @family-conquerorsans;
+		font-size: @basefont-size;
+	}
+
+/* ------------------------------  Stop header ------------------------------ */
+/* ------------------------------  Start contant ------------------------------ */
+.contant-in{
+	padding-top: 100px;
+}
+.house-wrapper{
+    position: relative;    
+	width: 100%;
+	padding-bottom: 10%;
+	float: left;
+}
+.house-wrapper-in{
+	position: relative;
+    overflow: hidden;
+}
+.hw-in{
+	li{
+		position: relative;
+		width: 20%;
+		text-align: center;
+		float: right;	
+	}
+	li .col-house-in{
+		width: 100%;
+		height: 541px; 
+	    height: 27em;
+		margin-bottom: 5%;
+	}	
+}
+img.count-beast{
+		position: absolute;
+		top: 218px;
+	    left: 50%;
+	    -webkit-transform: @translate;
+	    -ms-transform: @translate;
+	    transform: @translate;
+	    z-index: 10;
+	}
+.col-wolf-in{background: @house-wolf;}
+.col-fox-in{background: @house-fox;}
+.col-dog{/*background: url(../images/house-dog2.png) -1% 15% no-repeat;*/}
+.col-dog-in{background: @house-dog;}
+.col-cat-in{background: @house-cat;}
+.col-mouse-in{background: @house-mouse;}
+/*------- col-mouse -------*/
+.col-mouse-1{background: @mouse-in-house-1;}
+.col-mouse-2{background: @mouse-in-house-2;}
+.col-mouse-3{background: @mouse-in-house-3;}
+.col-mouse-4{background: @mouse-in-house-4;}
+.col-mouse-5{background: @mouse-in-house-5;}
+.col-mouse-6{background: @mouse-in-house-6;}
+.col-mouse-7{background: @mouse-in-house-7;}
+.col-mouse-8{background: @mouse-in-house-8;}
+.col-mouse-9{background: @mouse-in-house-9;}
+.col-mouse-10{background: @mouse-in-house-10;}
+.col-mouse-11{background: @mouse-in-house-11;}
+.col-mouse-12{background: @mouse-in-house-12;}
+.col-mouse-13{background: @mouse-in-house-13;}
+.col-mouse-14{background: @mouse-in-house-14;}
+.col-mouse-15{background: @mouse-in-house-15;}
+.col-mouse-16{background: @mouse-in-house-16;}
+.col-mouse-17{background: @mouse-in-house-17;}
+.col-mouse-18{background: @mouse-in-house-18;}
+.col-mouse-19{background: @mouse-in-house-19;}
+.col-mouse-20{background: @mouse-in-house-20;}
+.col-mouse-21{background: @mouse-in-house-21;}
+.col-mouse-22{background: @mouse-in-house-22;}
+.col-mouse-23{background: @mouse-in-house-23;}
+.col-mouse-24{background: @mouse-in-house-24;}
+.col-mouse-25{background: @mouse-in-house-25;}
+.col-mouse-26{background: @mouse-in-house-26;}
+.col-mouse-27{background: @mouse-in-house-27;}
+.col-mouse-28{background: @mouse-in-house-28;}
+.col-mouse-29{background: @mouse-in-house-29;}
+.col-mouse-30{background: @mouse-in-house-30;}
+.col-mouse-31{background: @mouse-in-house-31;}
+.col-mouse-32{background: @mouse-in-house-32;}
+.col-mouse-33{background: @mouse-in-house-33;}
+.col-mouse-34{background: @mouse-in-house-34;}
+.col-mouse-35{background: @mouse-in-house-35;}
+.col-mouse-36{background: @mouse-in-house-36;}
+.col-mouse-37{background: @mouse-in-house-37;}
+.col-mouse-38{background: @mouse-in-house-38;}
+.col-mouse-39{background: @mouse-in-house-39;}
+.col-mouse-40{background: @mouse-in-house-40;}
+.col-mouse-41{background: @mouse-in-house-41;}
+.col-mouse-42{background: @mouse-in-house-42;}
+.col-mouse-43{background: @mouse-in-house-43;}
+.col-mouse-44{background: @mouse-in-house-44;}
+.col-mouse-45{background: @mouse-in-house-45;}
+.col-mouse-46{background: @mouse-in-house-46;}
+.col-mouse-47{background: @mouse-in-house-47;}
+.col-mouse-48{background: @mouse-in-house-48;}
+.col-mouse-49{background: @mouse-in-house-49;}
+.col-mouse-50{background: @mouse-in-house-50;}
+.col-mouse-51{background: @mouse-in-house-51;}
+.col-mouse-52{background: @mouse-in-house-52;}
+.col-mouse-53{background: @mouse-in-house-53;}
+.col-mouse-54{background: @mouse-in-house-54;}
+.col-mouse-55{background: @mouse-in-house-55;}
+.col-mouse-56{background: @mouse-in-house-56;}
+.col-mouse-57{background: @mouse-in-house-57;}
+.col-mouse-58{background: @mouse-in-house-58;}
+.col-mouse-59{background: @mouse-in-house-59;}
+.col-mouse-60{background: @mouse-in-house-60;}
+.col-mouse-61{background: @mouse-in-house-61;}
+.col-mouse-62{background: @mouse-in-house-62;}
+.col-mouse-63{background: @mouse-in-house-63;}
+.col-mouse-64{background: @mouse-in-house-64;}
+/*-------------- .col-mouse:hover -------------*/
+.mouse-hover{cursor: @mouse-hover ;}
+/*.col-mouse-1:hover{background: @house-mouse;}
+.col-mouse-2:hover{background: @mouse-in-house-1;}
+.col-mouse-3:hover{background: @mouse-in-house-2;}
+.col-mouse-4:hover{background: @mouse-in-house-3;}
+.col-mouse-5:hover{background: @mouse-in-house-4;}
+.col-mouse-6:hover{background: @mouse-in-house-5;}
+.col-mouse-7:hover{background: @mouse-in-house-6;}
+.col-mouse-8:hover{background: @mouse-in-house-7;}
+.col-mouse-9:hover{background: @mouse-in-house-8;}
+.col-mouse-10:hover{background: @mouse-in-house-9;}
+.col-mouse-11:hover{background: @mouse-in-house-10;}
+.col-mouse-12:hover{background: @mouse-in-house-11;}
+.col-mouse-13:hover{background: @mouse-in-house-12;}
+.col-mouse-14:hover{background: @mouse-in-house-13;}
+.col-mouse-15:hover{background: @mouse-in-house-14;}
+.col-mouse-16:hover{background: @mouse-in-house-15;}
+.col-mouse-17:hover{background: @mouse-in-house-16;}
+.col-mouse-18:hover{background: @mouse-in-house-17;}
+.col-mouse-19:hover{background: @mouse-in-house-18;}
+.col-mouse-20:hover{background: @mouse-in-house-19;}
+.col-mouse-21:hover{background: @mouse-in-house-20;}
+.col-mouse-22:hover{background: @mouse-in-house-21;}
+.col-mouse-23:hover{background: @mouse-in-house-22;}
+.col-mouse-24:hover{background: @mouse-in-house-23;}
+.col-mouse-25:hover{background: @mouse-in-house-24;}
+.col-mouse-26:hover{background: @mouse-in-house-25;}
+.col-mouse-27:hover{background: @mouse-in-house-26;}
+.col-mouse-28:hover{background: @mouse-in-house-27;}
+.col-mouse-29:hover{background: @mouse-in-house-28;}
+.col-mouse-30:hover{background: @mouse-in-house-29;}
+.col-mouse-31:hover{background: @mouse-in-house-30;}
+.col-mouse-32:hover{background: @mouse-in-house-31;}
+.col-mouse-33:hover{background: @mouse-in-house-32;}
+.col-mouse-34:hover{background: @mouse-in-house-33;}
+.col-mouse-35:hover{background: @mouse-in-house-34;}
+.col-mouse-36:hover{background: @mouse-in-house-35;}
+.col-mouse-37:hover{background: @mouse-in-house-36;}
+.col-mouse-38:hover{background: @mouse-in-house-37;}
+.col-mouse-39:hover{background: @mouse-in-house-38;}
+.col-mouse-40:hover{background: @mouse-in-house-39;}
+.col-mouse-41:hover{background: @mouse-in-house-40;}
+.col-mouse-42:hover{background: @mouse-in-house-41;}
+.col-mouse-43:hover{background: @mouse-in-house-42;}
+.col-mouse-44:hover{background: @mouse-in-house-43;}
+.col-mouse-45:hover{background: @mouse-in-house-44;}
+.col-mouse-46:hover{background: @mouse-in-house-45;}
+.col-mouse-47:hover{background: @mouse-in-house-46;}
+.col-mouse-48:hover{background: @mouse-in-house-47;}
+.col-mouse-49:hover{background: @mouse-in-house-48;}
+.col-mouse-50:hover{background: @mouse-in-house-49;}
+.col-mouse-51:hover{background: @mouse-in-house-50;}
+.col-mouse-52:hover{background: @mouse-in-house-51;}
+.col-mouse-53:hover{background: @mouse-in-house-52;}
+.col-mouse-54:hover{background: @mouse-in-house-53;}
+.col-mouse-55:hover{background: @mouse-in-house-54;}
+.col-mouse-56:hover{background: @mouse-in-house-55;}
+.col-mouse-57:hover{background: @mouse-in-house-56;}
+.col-mouse-58:hover{background: @mouse-in-house-57;}
+.col-mouse-59:hover{background: @mouse-in-house-58;}
+.col-mouse-60:hover{background: @mouse-in-house-59;}
+.col-mouse-61:hover{background: @mouse-in-house-60;}
+.col-mouse-62:hover{background: @mouse-in-house-61;}
+.col-mouse-63:hover{background: @mouse-in-house-62;}
+.col-mouse-64:hover{background: @mouse-in-house-63;}
+/*------------------------------ col-cat ------------------------------*/
+.col-cat-1{background: @cat-in-house-1;}
+.col-cat-2{background: @cat-in-house-2;}
+.col-cat-3{background: @cat-in-house-3;}
+.col-cat-4{background: @cat-in-house-4;}
+.col-cat-5{background: @cat-in-house-5;}
+.col-cat-6{background: @cat-in-house-6;}
+.col-cat-7{background: @cat-in-house-7;}
+.col-cat-8{background: @cat-in-house-8;}
+.col-cat-9{background: @cat-in-house-9;}
+.col-cat-10{background: @cat-in-house-10;}
+.col-cat-11{background: @cat-in-house-11;}
+.col-cat-12{background: @cat-in-house-12;}
+.col-cat-13{background: @cat-in-house-13;}
+.col-cat-14{background: @cat-in-house-14;}
+.col-cat-15{background: @cat-in-house-15;}
+.col-cat-16{background: @cat-in-house-16;}
+.col-cat-17{background: @cat-in-house-17;}
+.col-cat-18{background: @cat-in-house-18;}
+.col-cat-19{background: @cat-in-house-19;}
+.col-cat-20{background: @cat-in-house-20;}
+.col-cat-21{background: @cat-in-house-21;}
+.col-cat-22{background: @cat-in-house-22;}
+.col-cat-23{background: @cat-in-house-23;}
+.col-cat-24{background: @cat-in-house-24;}
+.col-cat-25{background: @cat-in-house-25;}
+.col-cat-26{background: @cat-in-house-26;}
+.col-cat-27{background: @cat-in-house-27;}
+.col-cat-28{background: @cat-in-house-28;}
+.col-cat-29{background: @cat-in-house-29;}
+.col-cat-30{background: @cat-in-house-30;}
+.col-cat-31{background: @cat-in-house-31;}
+/* ---------- col-cat:hover -------------*/
+.cat-hover{cursor: @cat-hover;}
+/*.col-cat-1:hover{background: @house-cat;}
+.col-cat-2:hover{background: @cat-in-house-1;}
+.col-cat-3:hover{background: @cat-in-house-2;}
+.col-cat-4:hover{background: @cat-in-house-3;}
+.col-cat-5:hover{background: @cat-in-house-4;}
+.col-cat-6:hover{background: @cat-in-house-5;}
+.col-cat-7:hover{background: @cat-in-house-6;}
+.col-cat-8:hover{background: @cat-in-house-7;}
+.col-cat-9:hover{background: @cat-in-house-8;}
+.col-cat-10:hover{background: @cat-in-house-9;}
+.col-cat-11:hover{background: @cat-in-house-10;}
+.col-cat-12:hover{background: @cat-in-house-11;}
+.col-cat-13:hover{background: @cat-in-house-12;}
+.col-cat-14:hover{background: @cat-in-house-13;}
+.col-cat-15:hover{background: @cat-in-house-14;}
+.col-cat-16:hover{background: @cat-in-house-15;}
+.col-cat-17:hover{background: @cat-in-house-16;}
+.col-cat-18:hover{background: @cat-in-house-17;}
+.col-cat-19:hover{background: @cat-in-house-18;}
+.col-cat-20:hover{background: @cat-in-house-19;}
+.col-cat-21:hover{background: @cat-in-house-20;}
+.col-cat-22:hover{background: @cat-in-house-21;}
+.col-cat-23:hover{background: @cat-in-house-22;}
+.col-cat-24:hover{background: @cat-in-house-23;}
+.col-cat-25:hover{background: @cat-in-house-24;}
+.col-cat-26:hover{background: @cat-in-house-25;}
+.col-cat-27:hover{background: @cat-in-house-26;}
+.col-cat-28:hover{background: @cat-in-house-27;}
+.col-cat-29:hover{background: @cat-in-house-28;}
+.col-cat-30:hover{background: @cat-in-house-29;}
+.col-cat-31:hover{background: @cat-in-house-30;}
+/*-------------------------- col-dog ----------------------------------*/
+.col-dog-1{background: @dog-in-house-1;}
+.col-dog-2{background: @dog-in-house-2;}
+.col-dog-3{background: @dog-in-house-3;}
+.col-dog-3{background: @dog-in-house-3;}
+.col-dog-4{background: @dog-in-house-4;}
+.col-dog-5{background: @dog-in-house-5;}
+.col-dog-6{background: @dog-in-house-6;}
+.col-dog-7{background: @dog-in-house-7;}
+.col-dog-8{background: @dog-in-house-8;}
+.col-dog-10{background: @dog-in-house-10;}
+.col-dog-11{background: @dog-in-house-11;}
+.col-dog-12{background: @dog-in-house-12;}
+.col-dog-13{background: @dog-in-house-13;}
+/*--------- col-dog:hover --------*/
+.dog-hover{cursor: @dog-hover;}
+/*.col-dog-1:hover{background: @house-dog;}
+.col-dog-2:hover{background: @dog-in-house-1;}
+.col-dog-3:hover{background: @dog-in-house-2;}
+.col-dog-4:hover{background: @dog-in-house-3;}
+.col-dog-5:hover{background: @dog-in-house-4;}
+.col-dog-6:hover{background: @dog-in-house-5;}
+.col-dog-7:hover{background: @dog-in-house-6;}
+.col-dog-8:hover{background: @dog-in-house-7;}
+.col-dog-9:hover{background: @dog-in-house-8;}
+.col-dog-10:hover{background: @dog-in-house-9;}
+.col-dog-11:hover{background: @dog-in-house-10;}
+.col-dog-12:hover{background: @dog-in-house-11;}
+.col-dog-13:hover{background: @dog-in-house-12;}
+/*------------------------ col-fox ----------------------*/
+.col-fox-1{background: @fox-in-house-1;}
+.col-fox-2{background: @fox-in-house-2;}
+.col-fox-3{background: @fox-in-house-3;}
+.col-fox-4{background: @fox-in-house-4;}
+.col-fox-5{background: @fox-in-house-5;}
+.col-fox-6{background: @fox-in-house-6;}
+.col-fox-7{background: @fox-in-house-7;}
+/* ------ .col-fox:hover --------- */
+.fox-hover{cursor: @fox-hover;}
+/*.col-fox-1:hover{background: @house-fox;}
+.col-fox-2:hover{background: @fox-in-house-1;}
+.col-fox-3:hover{background: @fox-in-house-2;}
+.col-fox-4:hover{background: @fox-in-house-3;}
+.col-fox-5:hover{background: @fox-in-house-4;}
+.col-fox-6:hover{background: @fox-in-house-5;}
+.col-fox-7:hover{background: @fox-in-house-6;}
+/*----------------------- col-wolf ---------------------------*/
+.col-wolf-1{background: @wolf-in-house-1;}
+.col-wolf-2{background: @wolf-in-house-2;}
+.col-wolf-3{background: @wolf-in-house-3;}
+/* ----- col-wolf:hover -----*/
+.wolf-hover{cursor: @wolf-hover;}
+/*.col-wolf-1:hover{	background: @house-wolf;}
+.col-wolf-2:hover{	background: @wolf-in-house-1;}
+.col-wolf-3:hover{	background: @wolf-in-house-2;}
+
+
+/*------------- mouse-wrapper --------------*/
+.stop-hover{cursor: @stop-hover;}
+.mouse-wrapper{	
+ 	position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+	width: 20%;
+	padding-top: 150px;
+	padding-left: 1px;
+	float: right;
+	a{
+	    display: block;
+	    max-width: 49.5%;
+	    width: 50%;
+	    height: 8em;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    &:hover{
+			opacity: 1;
+		}
+	}	
+}
+.mouse-wrapper-in{
+	position: relative;
+	height: 100%;
+}
+.mouse-minus{
+	background: url(../images/mouse-minus.png);
+	float: left;
+}
+.mouse-minus-hover{background: url(../images/mouse-minus-hover.png);float: left;}
+.mouse-minus-inactive{background: url(../images/mouse-minus-inactive.png);float: left;}
+.mouse-minus-push{background: url(../images/mouse-minus-push.png);float: left;}
+
+.mouse-pluse{
+	background: url(../images/mouse-pluse.png);	
+	float: right;
+}
+.mouse-pluse-hover{background: url(../images/mouse-pluse-hover.png);float: right;}
+.mouse-pluse-inactive{background: url(../images/mouse-pluse-inactive.png);float: right;}
+.mouse-pluse-push{background: url(../images/mouse-pluse-push.png);float: right;}
+.mouse-result{
+	position: absolute;
+    bottom: 2%;
+	left: 50%;
+    -webkit-transform: @translate;
+    -ms-transform: @translate;
+    transform: @translate;
+	width: 252px;
+	max-width: 80%;
+	height: 8.4em;
+	margin: 0px auto 0 auto;
+	padding-top: 10%;
+	text-align: center;
+	background: url(../images/mouse-result-bg.png) no-repeat;
+}
+.num{
+	display: inline-block;	
+	font-family: @family-conquerorsans;
+	font-size: 60pt;
+}
+.truck-wrapper{
+   /* position: absolute;
+    bottom: 0; */
+	float:right;
+	
+    width: 100%;
+}
+.truck{
+	width: 23%;
+	height: 244px;
+    // margin-left: -50px;
+	background: url(../images/truck-img.png) no-repeat;
+}
+.truck{
+	/*-webkit-transition: 2000ms ease all;
+    -moz-transition: 2000ms ease all;
+    -o-transition: 2000ms ease all;
+    transition: 2000ms ease all;*/
+}
+.truck:hover {
+    /*transform: translate(-350px,0);
+    -webkit-transform: translate(-350px,0); 
+    -o-transform: translate(-350px,0); 
+    -moz-transform: translate(-350px,0); */
+}
+/*----------------- mouse-in-truck ---------------*/
+.mouse-in-truck-1 {background: @mouse-in-truck-1;}
+.mouse-in-truck-2 {background: @mouse-in-truck-2;}
+.mouse-in-truck-3 {background: @mouse-in-truck-3;}
+.mouse-in-truck-4 {background: @mouse-in-truck-4;}
+.mouse-in-truck-5 {background: @mouse-in-truck-5;}
+.mouse-in-truck-6 {background: @mouse-in-truck-6;}
+.mouse-in-truck-7 {background: @mouse-in-truck-7;}
+.mouse-in-truck-8 {background: @mouse-in-truck-8;}
+.mouse-in-truck-9 {background: @mouse-in-truck-9;}
+.mouse-in-truck-10 {background: @mouse-in-truck-10;}
+.mouse-in-truck-11 {background: @mouse-in-truck-11;}
+.mouse-in-truck-12 {background: @mouse-in-truck-12;}
+.mouse-in-truck-13 {background: @mouse-in-truck-13;}
+.mouse-in-truck-14 {background: @mouse-in-truck-14;}
+.mouse-in-truck-15 {background: @mouse-in-truck-15;}
+.mouse-in-truck-16 {background: @mouse-in-truck-16;}
+.mouse-in-truck-17 {background: @mouse-in-truck-17;}
+.mouse-in-truck-18 {background: @mouse-in-truck-18;}
+.mouse-in-truck-19 {background: @mouse-in-truck-19;}
+.mouse-in-truck-20 {background: @mouse-in-truck-20;}
+.mouse-in-truck-21 {background: @mouse-in-truck-21;}
+.mouse-in-truck-22 {background: @mouse-in-truck-22;}
+.mouse-in-truck-23 {background: @mouse-in-truck-23;}
+.mouse-in-truck-24 {background: @mouse-in-truck-24;}
+.mouse-in-truck-25 {background: @mouse-in-truck-25;}
+.mouse-in-truck-26 {background: @mouse-in-truck-26;}
+.mouse-in-truck-27 {background: @mouse-in-truck-27;}
+.mouse-in-truck-28 {background: @mouse-in-truck-28;}
+.mouse-in-truck-29 {background: @mouse-in-truck-29;}
+.mouse-in-truck-30 {background: @mouse-in-truck-30;}
+.mouse-in-truck-31 {background: @mouse-in-truck-31;}
+.mouse-in-truck-32 {background: @mouse-in-truck-32;}
+.mouse-in-truck-33 {background: @mouse-in-truck-33;}
+.mouse-in-truck-34 {background: @mouse-in-truck-34;}
+.mouse-in-truck-35 {background: @mouse-in-truck-35;}
+.mouse-in-truck-36 {background: @mouse-in-truck-36;}
+.mouse-in-truck-37 {background: @mouse-in-truck-37;}
+.mouse-in-truck-38 {background: @mouse-in-truck-38;}
+.mouse-in-truck-39 {background: @mouse-in-truck-39;}
+.mouse-in-truck-40 {background: @mouse-in-truck-40;}
+.mouse-in-truck-41 {background: @mouse-in-truck-41;}
+.mouse-in-truck-42 {background: @mouse-in-truck-42;}
+.mouse-in-truck-43 {background: @mouse-in-truck-43;}
+.mouse-in-truck-44 {background: @mouse-in-truck-44;}
+.mouse-in-truck-45 {background: @mouse-in-truck-45;}
+.mouse-in-truck-46 {background: @mouse-in-truck-46;}
+.mouse-in-truck-47 {background: @mouse-in-truck-47;}
+.mouse-in-truck-48 {background: @mouse-in-truck-48;}
+.mouse-in-truck-49 {background: @mouse-in-truck-49;}
+.mouse-in-truck-50 {background: @mouse-in-truck-50;}
+.mouse-in-truck-51 {background: @mouse-in-truck-51;}
+.mouse-in-truck-52 {background: @mouse-in-truck-52;}
+.mouse-in-truck-53 {background: @mouse-in-truck-53;}
+.mouse-in-truck-54 {background: @mouse-in-truck-54;}
+.mouse-in-truck-55 {background: @mouse-in-truck-55;}
+.mouse-in-truck-56 {background: @mouse-in-truck-56;}
+.mouse-in-truck-57 {background: @mouse-in-truck-57;}
+.mouse-in-truck-58 {background: @mouse-in-truck-58;}
+.mouse-in-truck-59 {background: @mouse-in-truck-59;}
+.mouse-in-truck-60 {background: @mouse-in-truck-60;}
+.mouse-in-truck-61 {background: @mouse-in-truck-61;}
+.mouse-in-truck-62 {background: @mouse-in-truck-62;}
+.mouse-in-truck-63 {background: @mouse-in-truck-63;}
+.mouse-in-truck-64 {background: @mouse-in-truck-64;}
+/* ------------------ cat-in-truck ---------------------------*/
+.cat-in-truck-1 {background: @cat-in-truck-1;}
+.cat-in-truck-2 {background: @cat-in-truck-2;}
+.cat-in-truck-3 {background: @cat-in-truck-3;}
+.cat-in-truck-4 {background: @cat-in-truck-4;}
+.cat-in-truck-5 {background: @cat-in-truck-5;}
+.cat-in-truck-6 {background: @cat-in-truck-6;}
+.cat-in-truck-7 {background: @cat-in-truck-7;}
+.cat-in-truck-8 {background: @cat-in-truck-8;}
+.cat-in-truck-9 {background: @cat-in-truck-9;}
+.cat-in-truck-10 {background: @cat-in-truck-10;}
+.cat-in-truck-11 {background: @cat-in-truck-11;}
+.cat-in-truck-12 {background: @cat-in-truck-12;}
+.cat-in-truck-13 {background: @cat-in-truck-13;}
+.cat-in-truck-14 {background: @cat-in-truck-14;}
+.cat-in-truck-15 {background: @cat-in-truck-15;}
+.cat-in-truck-16 {background: @cat-in-truck-16;}
+.cat-in-truck-17 {background: @cat-in-truck-17;}
+.cat-in-truck-18 {background: @cat-in-truck-18;}
+.cat-in-truck-19 {background: @cat-in-truck-19;}
+.cat-in-truck-20 {background: @cat-in-truck-20;}
+.cat-in-truck-21 {background: @cat-in-truck-21;}
+.cat-in-truck-22 {background: @cat-in-truck-22;}
+.cat-in-truck-23 {background: @cat-in-truck-23;}
+.cat-in-truck-24 {background: @cat-in-truck-24;}
+.cat-in-truck-25 {background: @cat-in-truck-25;}
+.cat-in-truck-26 {background: @cat-in-truck-26;}
+.cat-in-truck-27 {background: @cat-in-truck-27;}
+.cat-in-truck-28 {background: @cat-in-truck-28;}
+.cat-in-truck-29 {background: @cat-in-truck-29;}
+.cat-in-truck-30 {background: @cat-in-truck-30;}
+.cat-in-truck-31 {background: @cat-in-truck-31;}
+/* ------------------ dog-in-truck ---------------------------*/
+.dog-in-truck-1 {background: @dog-in-truck-1;}
+.dog-in-truck-2 {background: @dog-in-truck-2;}
+.dog-in-truck-3 {background: @dog-in-truck-3;}
+.dog-in-truck-4 {background: @dog-in-truck-4;}
+.dog-in-truck-5 {background: @dog-in-truck-5;}
+.dog-in-truck-6 {background: @dog-in-truck-6;}
+.dog-in-truck-7 {background: @dog-in-truck-7;}
+/* ------------------ fox-in-truck ---------------------------*/
+.fox-in-truck-1 {background: @fox-in-truck-1;}
+.fox-in-truck-2 {background: @fox-in-truck-2;}
+.fox-in-truck-3 {background: @fox-in-truck-3;}
+.fox-in-truck-4 {background: @fox-in-truck-4;}
+.fox-in-truck-5 {background: @fox-in-truck-5;}
+.fox-in-truck-6 {background: @fox-in-truck-6;}
+.fox-in-truck-7 {background: @fox-in-truck-7;}
+
+
+/* ------------------ wolf-in-truck ---------------------------*/
+.wolf-in-truck-1 {background: @fox-in-truck-2;}
+/* ------------------------------  Stop contant ------------------------------ */
+.hidden{
+	display:none;
+}
+.hw-in{
+	width: 75%;
+    float: left;
+}
+/* ------------------------------  Start footer ------------------------------ */
+.footer{
+	padding: 120px 0 160px 0;
+	a.check{
+		/*display: inline-block;
+	    padding: 30px 40px;
+		text-align: center;
+		font-size: 40px;
+		color: #fff;
+		background: #19a3ab;
+		border-radius: 5px;	
+		text-decoration: none;*/
+		width: 16%;
+		float: left;
+		img{
+			max-width: 100%;
+		}
+	}
+}
+/* ------------------------------  Stop footer ------------------------------ */
+.darken {
+	height: 100%;
+    width: 90%;
+	top: 0;
+	left: 0;
+    position: fixed;
+	z-index: 9999;
+}
+.darken-error {
+    /*display: none;*/
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 10;
+}
+.darken-success {
+    /*display: none;*/
+    width: 100%;
+    height: 100%;    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    
+    overflow: hidden;
+    z-index: 9;
+}
+body.darken-success{
+	background: url(../images/sucses-bg.png) no-repeat;    
+}
+.darken-success-in{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+    height: 100%;
+    background: url(../images/sucses-bg.png); 
+    background-size: cover;
+    z-index: -1;
+}
+.popup-fail{
+    max-width: 650px;
+    width: 100%;    
+    min-height: 350px;
+    padding: 68px 40px 10px 50px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    z-index: 100;
+    text-align: center;
+	 .h3{
+		margin: 20px 0 50px 0;
+		font-size: 40px;
+	}
+	a {
+	    display: inline-block;
+	    // padding: 30px 50px;
+	    text-align: center;
+	    font-size: 40px;
+	    color: #fff;
+	    // background: #19a3ab;
+	    border-radius: 5px;
+	    text-decoration: none;
+	    img{
+	    	max-width: 100%;
+	    }
+    }
+}
+.popup-success{
+	/*display: none;
+	position: relative;
+    right: 5%;
+    /*bottom: 260px;
+    top: 75%;
+    z-index: 9999;    
+    height: 100px;
+    padding: 30px 0 0 50px;
+    background: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);*/
+    position: relative;
+    z-index: 10;
+    width: 84%;
+    margin-top: -1%;
+    padding-left: 2%;    
+    float: left;    
+    .check{
+    // position: absolute;
+    // left: -36%;
+    // top: 0;
+    }
+    img{
+    	max-width: 100%;
+    	height: auto;
+    }
+}
+.popup-success span{
+    font-size: 40px;
+}

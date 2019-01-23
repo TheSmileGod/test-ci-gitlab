@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'conquerorsans';
+    src: url('../fonts/conquerorsans/conquerorsans.eot');
+    src: url('../fonts/conquerorsans/conquerorsans.eot') format('embedded-opentype'),
+         url('../fonts/conquerorsans/conquerorsans.woff2') format('woff2'),
+         url('../fonts/conquerorsans/conquerorsans.woff') format('woff'),
+         url('../fonts/conquerorsans/conquerorsans.ttf') format('truetype'),
+         url('../fonts/conquerorsans/conquerorsans.svg#conquerorsans') format('svg');
+}
+@font-face {
+    font-family: 'conquerorsansextrabold';
+    src: url('../fonts/conquerorsansextrabold/conquerorsansextrabold.eot');
+    src: url('../fonts/conquerorsansextrabold/conquerorsansextrabold.eot') format('embedded-opentype'),
+         url('../fonts/conquerorsansextrabold/conquerorsansextrabold.woff2') format('woff2'),
+         url('../fonts/conquerorsansextrabold/conquerorsansextrabold.woff') format('woff'),
+         url('../fonts/conquerorsansextrabold/conquerorsansextrabold.ttf') format('truetype'),
+         url('../fonts/conquerorsansextrabold/conquerorsansextrabold.svg#conquerorsansextrabold') format('svg');
+}
+@font-face {
+    font-family: 'conquerorsansextrabolditalic';
+    src: url('../fonts/conquerorsansextrabolditalic/conquerorsansextrabolditalic.eot');
+    src: url('../fonts/conquerorsansextrabolditalic/conquerorsansextrabolditalic.eot') format('embedded-opentype'),
+         url('../fonts/conquerorsansextrabolditalic/conquerorsansextrabolditalic.woff2') format('woff2'),
+         url('../fonts/conquerorsansextrabolditalic/conquerorsansextrabolditalic.woff') format('woff'),
+         url('../fonts/conquerorsansextrabolditalic/conquerorsansextrabolditalic.ttf') format('truetype'),
+         url('../fonts/conquerorsansextrabolditalic/conquerorsansextrabolditalic.svg#conquerorsansextrabolditalic') format('svg');
+}
+
+

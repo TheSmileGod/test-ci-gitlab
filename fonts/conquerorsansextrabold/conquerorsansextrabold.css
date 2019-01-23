@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'conquerorsansextrabold';
+    src: url('fonts/conquerorsansextrabold.eot');
+    src: url('fonts/conquerorsansextrabold.eot') format('embedded-opentype'),
+         url('fonts/conquerorsansextrabold.woff2') format('woff2'),
+         url('fonts/conquerorsansextrabold.woff') format('woff'),
+         url('fonts/conquerorsansextrabold.ttf') format('truetype'),
+         url('fonts/conquerorsansextrabold.svg#conquerorsansextrabold') format('svg');
+}

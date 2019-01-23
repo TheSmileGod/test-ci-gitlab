@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Расселение зверей</title>
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- <meta name="viewport" content="width=1400"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+		
+		<!-- переключение -->
+		<!--link rel="stylesheet/less" type="text/css" href="css/styles.less"-->
+		<!--script src="js/less-1.3.0.min.js"--></script>
+		<link rel="stylesheet" href="css/styles.css"> 
+		
+		<!-- script -->
+		
+		<!-- Vue 2.x -->
+		<script src="https://unpkg.com/vue"></script>
+		
+		<!-- Узнаем что за устройство -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
+		<script src="js/device.js"></script>
+		<!-- -->
+		
+		
+		
+		<link rel="stylesheet" href="css/media.css">	
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+			<script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js" data-text="Ваш браузер застарел, обновите свой браузер"></script>
+			<script src="js/html5shiv/es5-shim.min.js"></script>
+			<script src="js/html5shiv/html5shiv.min.js"></script>
+			<script src="js/html5shiv/html5shiv-printshiv.min.js"></script>
+			<script src="js/respond/respond.min.js"></script>
+		<![endif]-->
+		
+			<script>
+					var ua = navigator.userAgent.toLowerCase(); 
+					if (ua.indexOf('safari') != -1) { 
+					  $('body').addClass('body-safari');
+					}				
+			</script>
+	</head>
+	<body class="" >
+		<script>
+		var mobile = device.desktop() ? false : true;
+		console.log(mobile)
+		</script>		
+		<main class="wrapper" >
+			<div class="wrapper-in" id="home-container" v-bind:class="type + '-hover'" >
+				<header class="header" >
+					<a href="#" class="refresh" 
+					
+					@click="refreshAll()"></a>
+					<div class="clear"></div>
+					<div class="header-in">
+						<div class="h1">Расселение зверей</div>
+						<div class="description">Мышки, кошки, собаки, лисы и волки живут <span>в домиках</span> . <span>В каждом</span> домике может жить не более, чем один зверь, причем <span>в домике</span> для мышей могут жить только мышки, <span>в домике</span> для кошек — только кошки и так далее. <br>Двух мышек можно превратить <span>в одну</span> кошку, двух кошек — <span>в одну</span> собаку, двух собак — <span>в одну</span> лису, двух лис — <span>в одного</span> волка. Для этого нужно посадить зверей <span>в грузовик</span> и перевезти <span>в подходящий</span> домик.</div>
+						<div class="h2">Задайте количество мышек и расселите зверей по домикам. </div>
+					</div>	
+				</header>
+				<section class="contant">
+					<div class="darken"  :class="{'hidden': hide_success}"
+					></div>	
+					<div class="contant-in"  >
+						
+						<div class="house-wrapper" id="looks-well" >
+							<div class="house-wrapper-in">
+								<ul class="hw-in"  >
+									
+									<home 
+									:weight="mouse_weight" 
+									:cursor_weight="cursor_weight"
+									@changecursor="cursor"
+									@transit_c_to_h="cursor_weight_down"
+									@transit_h_to_c="cursor_weight_up"
+									:truck_weight="truck_weight" 
+									:truck_cost="truck_cost"
+									:hide="hide_flag"
+									:check_show="truckCounter"
+									:cost="1" :type="'mouse'"></home>
+									
+									<home 
+									:weight="cat_weight"
+									:cursor_weight="cursor_weight"
+									@changecursor="cursor"
+									@transit_c_to_h="cursor_weight_down"
+									@transit_h_to_c="cursor_weight_up"
+									:truck_weight="truck_weight" 
+									:truck_cost="truck_cost"
+									:hide="hide_flag"
+									:check_show="truckCounter"
+									:cost="2" :type="'cat'"></home>
+									
+									<home 
+									:weight="dog_weight"
+									:cursor_weight="cursor_weight"
+									@changecursor="cursor"
+									@transit_c_to_h="cursor_weight_down"
+									@transit_h_to_c="cursor_weight_up"
+									:truck_weight="truck_weight" 
+									:truck_cost="truck_cost"
+									:hide="hide_flag"
+									:check_show="truckCounter"
+									:cost="4" :type="'dog'"></home>
+									
+									<home 
+									:weight="fox_weight" 
+									:cursor_weight="cursor_weight"
+									@changecursor="cursor"
+									@transit_c_to_h="cursor_weight_down"
+									@transit_h_to_c="cursor_weight_up"
+									:truck_weight="truck_weight" 
+									:truck_cost="truck_cost"
+									:hide="hide_flag"
+									:check_show="truckCounter"
+									:cost="8" :type="'fox'"></home>
+									
+									<home 
+									:weight="wolf_weight" 
+									:cursor_weight="cursor_weight"
+									@changecursor="cursor"
+									@transit_c_to_h="cursor_weight_down"
+									@transit_h_to_c="cursor_weight_up"
+									:truck_weight="truck_weight" 
+									:truck_cost="truck_cost"
+									:hide="hide_flag"
+									:check_show="truckCounter"
+									:cost="16" :type="'wolf'"></home>
+									
+								</ul>
+								
+								<div class="mouse-wrapper">
+									<mouse-button  
+									@counterdecrease="DecreaseTruck"
+									@counterrise="RiseTruck"
+									:disable_component="disable_m_button"
+									:refresh="refresh_flag"
+									:check_counter="truckCounter"
+									:limit="31"></mouse-button>
+									<div class="clear"></div>
+									<div class="mouse-result">
+										<span class="num">{{ truckCounter }}</span>
+									</div>
+								</div>
+							</div>
+							<div class="truck-wrapper">
+								
+								<truck 
+								@startmove="startmove"
+								@stopmove="stopmove"
+								@gomove="gomove"
+								
+								@mobilestartmove="mobilestartmove"
+								@mobilestopmove="mobilestopmove"
+								@mobilegomove="mobilegomove"
+								
+								@changecursor="cursor"
+								@transit_c_to_t="cursor_weight_down"
+								:cursor_weight="cursor_weight"
+								:leftstyle="truck_left + 'px'" 
+								:weight="truck_weight" 
+								:object="truck_object" 
+								:allow_path="allow_path"
+								:cost="truck_cost"></truck>
+								
+							</div>
+							
+						</div>
+											
+						
+					<div class="clear"></div>
+					</div>
+				</section>
+			
+				<div class="clear"></div>					
+				
+			
+				<div class="footer">
+					<a href="#looks-well" 
+					@click="checkquest()" class="check"><img src="images/check.png" alt=""></a>
+					
+					<div class="popup-success"  :class="{'hidden': hide_success}" id="popup-2">
+							
+							<img src="images/correctly.png" alt="">
+						</div>
+
+				</div>
+				
+				<!-- Подгружаем изображения -->
+				<loadcash
+				:objects="{ 1: ['mouse', 'jpg', 'gif'], 2 : ['cat', 'png', 'gif'], 4: ['dog', 'png', 'gif'], 8 : ['fox', 'png', 'gif'], 16 : ['wolf', 'png', 'gif']}"
+				:limit_weight="31"
+				></loadcash>
+				
+				
+				<div class="darken-error" :class="{'hidden': hide_fail}"
+				@click="hide_fail=true">
+					<div class="popup-fail" id="popup">
+						<div class="h3">Увы, есть ошибки.</div>	
+						<a href="#looks-well"
+						@click="refreshAll()"><img src="images/start.png" alt=""></a>
+					</div>	
+				</div>		
+				
+				<div class="darken-success-in" :class="{'hidden': hide_success}"></div>	
+				
+				
+			</div>
+		
+		</main>
+		<!-- основной фаил пока что -->
+		
+		<script src="js/vue/component.js"></script>
+		<script src="js/vue/vue.js"></script>
+		
+		
+
+
+
+
+		
+	</body>
+</html>

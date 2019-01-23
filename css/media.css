@@ -1,0 +1,195 @@
+/*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 3000px){
+	.col-house-in, .col-house-in:hover, .col-dog{background-size: contain;}
+}
+
+@media only screen and (max-width : 2000px) {
+	.wrapper{width: 100%;}
+	.wrapper-in{width: 90%;padding-top: 4%;padding-left: 0;}
+	.contant-in{overflow: visible;}
+	.mouse-wrapper{padding-top: 0;}
+	.hw-in{overflow: visible;}
+	.truck {background-size: contain;}
+}
+@media only screen and (max-width : 1900px) {
+	.contant-in {padding-top: 6%;}
+	.house-wrapper{width: 100%;}	
+	.mouse-result {/*margin-top: 20%;*/ padding-top: 9%;background-size: contain;}
+	
+	img.count-beast{top: 30%;}
+	.one{max-width: 15%;}
+	.zero{max-width: 20%;}
+	.footer {padding: 7% 0 10% 0;}
+	.num{font-size: 4em;}
+	.truck{height: 10em;}
+	.col-mouse-2 {background-position: 0% 31%;}
+}
+
+@media only screen and (max-width : 1800px) {
+	.mouse-result {bottom: 6%;}
+}
+@media only screen and (max-width : 1700px) {
+	.mouse-result {bottom: 7%;}
+}
+@media only screen and (max-width : 1600px) {
+	.hw-in li .col-house-in{height: 23em;}
+	.truck {height: 9em;}
+	.popup-success{/*bottom: 238px;*/}
+	.mouse-wrapper a{height: 7em;}
+	.mouse-result {bottom: 0%;}
+
+}
+@media only screen and (max-width : 1400px) {
+	img.count-beast {top: 32%;}
+	.hw-in li .col-house-in{height: 21em;}
+	.num {font-size: 3em;}
+	.truck {height: 8em;}
+	.b-popup a {padding: 20px 30px;font-size: 30px;}
+	a.refresh{width: 25px;height: 28px;background-size: contain;}
+	a.refresh:hover{background-size: contain;}
+	/*.popup-success{bottom: 9.5em;height: 70px;padding-top: 20px;}
+	.popup-success span{font-size: 30px;}*/
+	.mouse-wrapper a{height: 6em;}
+	.mouse-result {height: 8em;}
+
+	.popup-fail .h3 {margin:20px 0; font-size: 30px;}
+	.popup-fail a {padding: 20px 25px;font-size: 30px;}
+	.popup-fail {max-width: 450px;min-height: 250px; padding-top: 41px;}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.truck {height: 7em;}
+	
+	.hw-in li .col-house-in{height: 17em; margin-bottom: 0px;}
+	/*.popup-success{bottom: 8.7em; top: 75%;}*/
+	.num {font-size: 2.5em;}
+	.col-dog-in {background-position: 0% 13%;}
+	.col-cat-in {background-position: 0% 15%;}
+	.col-mouse-in {background-position: 0% 18%;}
+	.mouse-wrapper a{height: 5em;}
+	.mouse-result {height: 6em;}
+
+
+}
+@media only screen and (max-width : 1100px) {
+	.hw-in li .col-house-in {height: 15em;}
+	.mouse-result {height: 5.5em;}
+}
+/*body{overflow-x: hidden;}*/
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.description{width: 100%;}
+	.hw-in li .col-house-in {height: ;}
+	/*.popup-success{bottom: 7.9em;}*/
+	.num {font-size: 2em;}
+	.mouse-wrapper a{height: 4em;}
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.header{padding: 0;}
+	.hw-in li .col-house-in {height: 11em;}
+	.mouse-result {height: 4em; bottom: -1%;}
+	.num {font-size: 1.5em;}
+	.truck {height: 5em;}
+	.b-popup a {padding: 9px 20px;font-size: 20px;}
+	/*.popup-success {width: 50%; height: 40px; padding-top: 8px;padding-left: 5%;}
+	.popup-success span {font-size: 20px;}*/
+	.mouse-wrapper a{height: 3em;}
+	.popup-fail .h3 {margin:10px 0; font-size: 20px;}
+	.popup-fail a {padding: 10px 15px;font-size: 20px;}
+	.popup-fail {max-width: 350px;min-height: 150px; padding-top: 31px;}
+
+
+
+
+
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+@media only screen and (max-width : 640px) {
+	.hw-in li .col-house-in {height: 9em;margin-bottom: 3%;}
+	.num {font-size: 1em;}
+	.mouse-result {height: 3em; bottom: 3%;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.h1 {font-size: 24px;}
+	.h2{font-size: 16px;}
+	.description{font-size: 14px;}
+	.hw-in li .col-house-in {height: 7em;}	
+	.mouse-result{height: 50px;}
+	.truck {height: 3em;}
+	.mouse-wrapper a{height: 2em;}
+
+	.popup-fail .h3 {margin:10px 0; font-size: 18px;}
+	.popup-fail a {padding: 5px 10px;font-size: 16px;}
+	.popup-fail {max-width: 250px;min-height: 120px; padding-top: 21px;}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px) {
+	.hw-in li .col-house-in {height: 5.3em;}
+	.mouse-result{padding-top: 3%;height: 2em;bottom: 0;}
+	.num {font-size: 0.8em;}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.hw-in li .col-house-in {
+    height: 100px;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+@media only screen and (min-width : 2000px) {
+	.car {margin-left: -100px;}
+	.truck {width: 540px; height: 306px;}
+
+}
